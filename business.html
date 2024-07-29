@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Management Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .header, .footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .question {
+            margin-bottom: 1rem;
+        }
+
+        .question label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .options {
+            margin-bottom: 0.5rem;
+        }
+
+        .options input {
+            margin-right: 0.5rem;
+        }
+
+        .submit-btn {
+            padding: 0.5rem;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .results {
+            display: none;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Business Management Examination</h1>
+    </div>
+
+    <div class="container">
+        <form id="exam-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="q1"><strong>1. What is the primary purpose of strategic management?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> To set long-term goals and determine the best approach to achieve them</label>
+                    <label><input type="radio" name="q1" value="b"> To manage daily operations</label>
+                    <label><input type="radio" name="q1" value="c"> To handle customer complaints</label>
+                    <label><input type="radio" name="q1" value="d"> To supervise employees</label>
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="q2"><strong>2. Which of the following is a key function of management?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> Planning</label>
+                    <label><input type="radio" name="q2" value="b"> Motivating</label>
+                    <label><input type="radio" name="q2" value="c"> Networking</label>
+                    <label><input type="radio" name="q2" value="d"> Delegating</label>
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="q3"><strong>3. What is SWOT analysis used for?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> Identifying strengths, weaknesses, opportunities, and threats</label>
+                    <label><input type="radio" name="q3" value="b"> Assessing financial performance</label>
+                    <label><input type="radio" name="q3" value="c"> Evaluating employee performance</label>
+                    <label><input type="radio" name="q3" value="d"> Analyzing market trends</label>
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="q4"><strong>4. What is the role of a leader in a business organization?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> To inspire and guide employees towards achieving organizational goals</label>
+                    <label><input type="radio" name="q4" value="b"> To handle financial transactions</label>
+                    <label><input type="radio" name="q4" value="c"> To maintain inventory</label>
+                    <label><input type="radio" name="q4" value="d"> To conduct market research</label>
+                </div>
+            </div>
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="q5"><strong>5. What is the definition of market segmentation?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> Dividing a market into distinct groups of buyers with different needs or behaviors</label>
+                    <label><input type="radio" name="q5" value="b"> Analyzing financial statements</label>
+                    <label><input type="radio" name="q5" value="c"> Developing new products</label>
+                    <label><input type="radio" name="q5" value="d"> Conducting competitor analysis</label>
+                </div>
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+                <label for="q6"><strong>6. What is the purpose of performance appraisals in a business?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> To evaluate employee performance and provide feedback</label>
+                    <label><input type="radio" name="q6" value="b"> To manage cash flow</label>
+                    <label><input type="radio" name="q6" value="c"> To set product prices</label>
+                    <label><input type="radio" name="q6" value="d"> To conduct marketing campaigns</label>
+                </div>
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+                <label for="q7"><strong>7. What is the definition of corporate social responsibility (CSR)?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> A company's commitment to manage the social, environmental, and economic effects of its operations responsibly</label>
+                    <label><input type="radio" name="q7" value="b"> A company's strategy to maximize profits</label>
+                    <label><input type="radio" name="q7" value="c"> A company's focus on internal processes</label>
+                    <label><input type="radio" name="q7" value="d"> A company's plan to enter new markets</label>
+                </div>
+            </div>
+            <!-- Question 8 -->
+            <div class="question">
+                <label for="q8"><strong>8. What is benchmarking in business management?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> Comparing business processes and performance metrics to industry best practices</label>
+                    <label><input type="radio" name="q8" value="b"> Conducting market research</label>
+                    <label><input type="radio" name="q8" value="c"> Setting organizational goals</label>
+                    <label><input type="radio" name="q8" value="d"> Developing marketing strategies</label>
+                </div>
+            </div>
+            <!-- Question 9 -->
+            <div class="question">
+                <label for="q9"><strong>9. What is a business plan?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> A formal written document outlining the goals, strategies, and financial forecasts of a business</label>
+                    <label><input type="radio" name="q9" value="b"> A document listing employee duties</label>
+                    <label><input type="radio" name="q9" value="c"> A financial report</label>
+                    <label><input type="radio" name="q9" value="d"> A marketing flyer</label>
+                </div>
+            </div>
+            <!-- Question 10 -->
+            <div class="question">
+                <label for="q10"><strong>10. What is the primary goal of financial management?</strong></label>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> To maximize the wealth of the shareholders</label>
+                    <label><input type="radio" name="q10" value="b"> To manage employee relations</label>
+                    <label><input type="radio" name="q10" value="c"> To handle customer complaints</label>
+                    <label><input type="radio" name="q10" value="d"> To oversee production processes</label>
+                </div>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="submitExam()">Submit</button>
+        </form>
+
+        <div id="results" class="results">
+            <p id="results-text"></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Business Management Exam. All rights reserved.</p>
+    </div>
+
+    <script>
+        function submitExam() {
+            const answers = {
+                q1: 'a',
+                q2: 'a',
+                q3: 'a',
+                q4: 'a',
+                q5: 'a',
+                q6: 'a',
+                q7: 'a',
+                q8: 'a',
+                q9: 'a',
+                q10: 'a'
+            };
+
+            let score = 0;
+
+            for (const [question, correctAnswer] of Object.entries(answers)) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (userAnswer && userAnswer.value === correctAnswer) {
+                    score++;
+                }
+            }
+
+            const results = document.getElementById('results');
+            const resultsText = document.getElementById('results-text');
+            resultsText.innerText = `You scored ${score} out of 10.`;
+            results.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

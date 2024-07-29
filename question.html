@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Basis Examination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header, .footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .header h1, .footer p {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .question {
+            margin-bottom: 1rem;
+        }
+
+        .question p {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .options {
+            margin-bottom: 1rem;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .results {
+            display: none;
+            margin-top: 2rem;
+        }
+
+        .results p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ICT Basis Examination</h1>
+    </div>
+
+    <div class="container">
+        <form id="exam-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What is a variable in programming?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> A storage location identified by a name</label>
+                    <label><input type="radio" name="q1" value="b"> A function that performs a task</label>
+                    <label><input type="radio" name="q1" value="c"> A loop that repeats code</label>
+                    <label><input type="radio" name="q1" value="d"> A class in object-oriented programming</label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. What is a loop?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> A type of variable</label>
+                    <label><input type="radio" name="q2" value="b"> A construct that repeats code</label>
+                    <label><input type="radio" name="q2" value="c"> An object-oriented concept</label>
+                    <label><input type="radio" name="q2" value="d"> A database query</label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. What is an array?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> A single value holder</label>
+                    <label><input type="radio" name="q3" value="b"> A collection of items stored at contiguous locations</label>
+                    <label><input type="radio" name="q3" value="c"> A database table</label>
+                    <label><input type="radio" name="q3" value="d"> An object instance</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. What is an object in object-oriented programming?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> A type of array</label>
+                    <label><input type="radio" name="q4" value="b"> A class that encapsulates data and methods</label>
+                    <label><input type="radio" name="q4" value="c"> A function that performs a task</label>
+                    <label><input type="radio" name="q4" value="d"> A loop construct</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. What is the purpose of a function?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> To store multiple values</label>
+                    <label><input type="radio" name="q5" value="b"> To perform a specific task and return a result</label>
+                    <label><input type="radio" name="q5" value="c"> To repeat code execution</label>
+                    <label><input type="radio" name="q5" value="d"> To define data types</label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. What is inheritance in object-oriented programming?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> Reusing methods from another class</label>
+                    <label><input type="radio" name="q6" value="b"> Defining new data types</label>
+                    <label><input type="radio" name="q6" value="c"> The ability to define multiple functions</label>
+                    <label><input type="radio" name="q6" value="d"> The practice of bundling data and methods</label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. What is polymorphism?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> Allowing different objects to be treated as a common superclass</label>
+                    <label><input type="radio" name="q7" value="b"> The practice of data encapsulation</label>
+                    <label><input type="radio" name="q7" value="c"> A construct for code repetition</label>
+                    <label><input type="radio" name="q7" value="d"> A type of variable</label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. What is encapsulation?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> Bundling data and methods into a single unit</label>
+                    <label><input type="radio" name="q8" value="b"> The ability to handle different types of data</label>
+                    <label><input type="radio" name="q8" value="c"> Repeating code using loops</label>
+                    <label><input type="radio" name="q8" value="d"> Defining methods in classes</label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. What is an SQL query?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> A method to perform calculations</label>
+                    <label><input type="radio" name="q9" value="b"> A request for data from a database</label>
+                    <label><input type="radio" name="q9" value="c"> A type of loop construct</label>
+                    <label><input type="radio" name="q9" value="d"> A function for data manipulation</label>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p>10. What is a database?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> A single storage unit</label>
+                    <label><input type="radio" name="q10" value="b"> An organized collection of structured information</label>
+                    <label><input type="radio" name="q10" value="c"> A type of variable</label>
+                    <label><input type="radio" name="q10" value="d"> A function to process data</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Exam</button>
+        </form>
+
+        <div class="results" id="results">
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 ICT Basis Examination. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.getElementById('exam-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const answers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'b',
+                q4: 'b',
+                q5: 'b',
+                q6: 'a',
+                q7: 'a',
+                q8: 'a',
+                q9: 'b',
+                q10: 'b'
+            };
+
+            let score = 0;
+            for (let i = 1; i <= 10; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && selected.value === answers[`q${i}`]) {
+                    score++;
+                }
+            }
+
+            const totalQuestions = 10;
+            const percentage = (score / totalQuestions) * 100;
+            document.getElementById('result-text').textContent = `You scored ${score} out of ${totalQuestions} (${percentage.toFixed(2)}%)`;
+            document.getElementById('results').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
